@@ -84,7 +84,7 @@ void Widget::on_pbReset_clicked()
     int num_10 = money / 10;
     money %= 10;
 
-    QString change_info = QString("Money Reset: \n500 won: %1 coins\n100 won: %2 coins\n50 won: %3 coins\n10 won: %4 coins")
+    QString change_info = QString("500 won: %1 coins\n100 won: %2 coins\n50 won: %3 coins\n10 won: %4 coins")
                               .arg(num_500).arg(num_100).arg(num_50).arg(num_10);
     QMessageBox::information(this, "Reset", change_info);
 
