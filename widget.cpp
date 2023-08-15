@@ -7,7 +7,7 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    changeMoney(0); // Set the initial state of the drink buttons
+    changeMoney(0); // 드링크 버튼 초기 상태 설정
 }
 
 Widget::~Widget()
@@ -19,7 +19,7 @@ void Widget::changeMoney(int diff) {
     money += diff;
     ui->lcdNumber->display(money);
 
-    // Enable or disable drink buttons based on the money amount
+    // 돈 상태에 따라 드링크 버튼 활성화/비활성화
     ui->pbCoffee->setEnabled(money >= 100);
     ui->pbTea->setEnabled(money >= 150);
     ui->pbMilk->setEnabled(money >= 200);
