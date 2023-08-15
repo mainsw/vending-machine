@@ -88,7 +88,7 @@ void Widget::on_pbReset_clicked()
                               .arg(num_500).arg(num_100).arg(num_50).arg(num_10);
     QMessageBox::information(this, "Reset", change_info);
 
-    // Reset the money
+    // 돈 초기화
     changeMoney(-money);
 }
 
